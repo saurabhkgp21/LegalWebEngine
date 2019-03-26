@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%  static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%  static 'css/fa.css' %}">
+	<link rel="stylesheet" type="text/css" href="{%  static 'css/style.css' %}">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{%  static 'css/BsMultiSelect.css' %}">
+	<link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <!--   <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
+
+	<title>Index</title>
+</head>
+<body class="container">
+	<div class="searchbox">
+		<input type="text" name="srch" class="search" placeholder="search " required>
+		<a href="output.html"><i class="fa fa-search icon" aria-hidden="true"></i></a>
+		<!-- <button class="box">search</button> -->
+	</div>
+	<div class="drops row">
+		<div class="datedrop col-mid-3">
+			<center><p class="title">From:</p></center><br>
+			<input type="date" /><br><br><br>
+			<center><p class="title">To:</p></center><br>
+			<input type="date" name="">
+		</div>
+		<div class="category col-mid-3">
+			<center><p class="title">category:</p></center><br>
+			<select name="states1" id="example1" class="form-control"  multiple="multiple" style="display: none;">
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option selected value="CA">California</option>
+</select>
+<script>
+$(function(){
+$("select").dashboardCodeBsMultiSelect();
+});
+</script>
+		</div>
+		<div class="acts col-mid-3">
+			<center><p class="title">Acts:</p></center><br>
+			<select name="states2" id="example2" class="form-control"  multiple="multiple" style="display: none;">
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option  value="CA">California</option>
+<option selected value="IN">India</option>
+</select>
+<script>
+$(function(){
+$("select").dashboardCodeBsMultiSelect();
+});
+</script>
+		</div>
+		<div class="judge col-mid-3">
+			<center><p class="title">Judge:</p></center><br>
+			<select name="states3" id="example3" class="form-control"  multiple="multiple" style="display: none;">
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option  value="CA">California</option>
+</select>
+<script>
+$(function(){
+$("select").dashboardCodeBsMultiSelect();
+});
+</script>
+
+  </div>
+		</div>
+	</div>
+		 <script src="{%  static 'js/jq.js' %}"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+
+   <script src="{%  static 'js/js.js' %}"></script>
+
+    <script src="{%  static 'js/bootstrap.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="{%  static 'js/BsMultiSelect.js' %}"></script>
+<script>$("select").bsMultiSelect();</script>
+
+</body>
+</html>
+
+
