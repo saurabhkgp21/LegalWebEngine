@@ -3002,6 +3002,9 @@ input[type="button"].btn-block {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
+  overflow: auto;
+  max-height: 30%;
+  max-width: 20%;
 }
 
 .dropdown-menu-right {
