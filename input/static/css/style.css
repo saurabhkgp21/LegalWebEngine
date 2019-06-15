@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700italic,700,400italic);
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan');
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+    touch-action:none;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #63b3ee;
+}
+.searchbox{
+	width: 100px;
+	height: 50px;
+	margin-left: 15%;
+	margin-right: 28%;
+	margin-top: 100px;
+	padding: auto;
+}
+.search{
+	padding:40px 270px;
+	outline: none;
+	border: none;
+	background-color: #157cc1;
+	border-radius: 100px;
+	color: #fff;
+	font-family: nunito;
+	/*border: 10px solid;*/
+	position: relative;
+	box-shadow: 0 10px 40px #004777, 0 0 0 10px #ffffffeb;
+
+}
+.abcd input{
+	margin: 0px;
+	padding: 60%;
+	font-size: 60px;
+}
+.icon{
+	position: relative;
+	color: #000;
+	text-shadow: 10px;
+	text-indent: 10px;
+	top: -74px;
+	left: 620%;
+	font-size: 40px;
+
+}
+.searchbox input[type="text"]::placeholder
+{
+    color: rgb(0,0,0,0.3);
+    font-size: 40px;
+    text-align: center;
+    top: 10px;
+    padding: auto;
+    
+
+}
+.icon:hover{
+	color: rgb(0, 233, 255, 0.5);
+	text-shadow: 10px #fff;
+
+}
+.searchbox input:hover{
+	background-color: #08578c;
+	transition: 
+}
+.drops{
+	padding: 0px;
+	width: 100%;
+	margin-top: 200px;
+	/*border: 1px solid;
+*/	height: 100px;
+	float: left;
+
+}
+.datedrop{
+	/*border: 1px solid;*/
+	height: 100%;
+	width: 20%;
+	float: left;
+	
+	/*background-color: #CC6633;*/
+	/*background-color: lightblue;*/
+}
+.category{
+	/*border: 1px solid;*/
+	height: 100%;
+	width: 20%;
+	float: left;
+	margin-left: 5%;
+	/*background-color: lightblue;*/
+}
+.category .dropdown{
+	/*margin-left: 1%;*/
+	margin-right: auto;
+	overflow: hidden;
+}
+
+.acts{
+	/*border: 1px solid;
+*/	height: 100%;
+	width: 20%;
+	float: left;
+	margin-left: 5%;
+	
+}
+
+.judge{
+	/*border: 1px solid;*/
+	height: 100%;
+	width: 25%;
+	float: left;
+	margin-left: 5%;
+
+}
+.daterange{
+	width: 100%;
+	height: auto;
+}
+.datedrop input[type=text]{
+	background-color: #157cc1;
+	color: #000;
+	overflow: scroll;
+	font-size: 19px;
+	outline: none;
+/*	border: none;*/
+	margin-top: 26px;
+	text-align: center;
+	text-align-last: center;
+	position: relative;
+}
+.ft{
+	position: absolute;
+	text-align-last: center;
+	text-align: center;
+	left: 10.7%;
+	font-family: 'Baloo Chettan', cursive;
+	font-size: 25px;
+}
+.ft1{
+	position: absolute;
+	left: 10.7%;
+
+}
+input[type=date]
+{
+	/*padding:0% 1%;*/
+	/*border-width: 2 px;*/
+	width: 100%;
+	/*border-width: 2px;
+	border-style: groove;*/
+	border-radius: 7px
+	
+
+}
+
+.title{
+	size: 30px;
+	background-color: #cc6600;
+	color: white;
+	border-radius: 20px;
+	
+}
