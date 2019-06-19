@@ -8,9 +8,30 @@ html, body
     touch-action:none;
 }
 
+
+#sidebar {
+    /*min-width: : : 250px;*/
+    /*max-width: : : 250px;*/
+    position: relative;
+    /*z-index: 300;*/
+    /*left: 0;*/
+    width: auto;
+    top: 150px;
+    bottom: 0;
+}
+
+#sidebar.active {
+	display: none;
+}
+
+#filterButton{
+	background-color: #157cc1;
+	border-color: #157cc1;
+}
+
 .logoBox{
 	position: relative;
-	height: 40vh;
+	height: 30vh;
 }
 
 .logoTitle{
@@ -91,11 +112,10 @@ body{
 .drops{
 	padding: 0px;
 	width: 100%;
-	margin-top: 200px;
+	margin-top: 50px;
 	/*border: 1px solid;
 */	height: 100px;
 	float: left;
-
 }
 .dateFrom{
 	/*border: 1px solid;*/
@@ -103,7 +123,7 @@ body{
 	width: 20%;
 	float: left;
 
-	margin-left: 5%
+	/*margin-left: 5%*/
 	
 	/*background-color: #CC6633;*/
 	/*background-color: lightblue;*/
@@ -115,41 +135,46 @@ body{
 	width: 20%;
 	float: left;
 
-	margin-left: 5%
+	/*margin-left: 5%*/
 	
 	/*background-color: #CC6633;*/
 	/*background-color: lightblue;*/
 }
 .category{
 	/*border: 1px solid;*/
-	height: 100%;
-	width: 20%;
+	
 	float: left;
-	margin-left: 5%;
+	height: 300px;
+	width: 30%;
+	margin-left: 3%;
 	/*background-color: lightblue;*/
 }
-.category .dropdown{
+.dropdown{
 	/*margin-left: 1%;*/
 	margin-right: auto;
 	overflow: hidden;
 }
 
+.dropdown-menu{
+	max-height: 70%;
+}
+
 .acts{
 	/*border: 1px solid;
-*/	height: 100%;
-	width: 20%;
-	float: left;
-	margin-left: 5%;
+*/	
+	height: 300px;
 	
+	float: left;
+	margin-left: 3%;
+	width: 30%;
 }
 
 .judge{
 	/*border: 1px solid;*/
-	height: 100%;
-	width: 25%;
+	height: 300px;
 	float: left;
-	margin-left: 5%;
-
+	margin-left: 3%;
+	width: 30%
 }
 .daterange{
 	width: 100%;
@@ -208,7 +233,7 @@ input[type=date]
 
 .title{
 	size: 30px;
-	background-color: #cc6600;
+	background-color: #157cc1;
 	color: white;
 	border-radius: 20px;
 	

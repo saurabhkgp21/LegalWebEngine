@@ -17,6 +17,22 @@
 </head>
 <body class="container">
 
+<div >
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <button type="button" id="filterButton" class="btn btn-info " >
+                <span>Show Filters</span>
+            </button>
+
+        </div>
+    </nav>
+
+
     <div class="logoBox">
         <div class="logoTitle">
                 TheLawiva
@@ -26,16 +42,22 @@
     <div class="searchForm">
         <form action="{% url 'output' %}" method="post" role="form">
         {% csrf_token %}
-        <div class="searchbox">
-            <input type="text" name="naturalLanguageQuery" class="search" placeholder="search " required>
-            <button class="fa fa-search searchIcon" type="submit" aria-hidden="true"></button>
-        </div>
-        <div class="drops row">
-            <div class="category col-mid-3">
+            <div class="searchbox">
+                <input type="text" name="naturalLanguageQuery" class="search" placeholder="search " required>
+                <button class="fa fa-search searchIcon" type="submit" aria-hidden="true"></button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div id="sidebar">
+        <div class="rows">
+            <div class="category col-md-6">
                 <div style="text-align: center;">
                     <p class="title">category:</p>
                 </div><br>
-                <select name="categories" id="example1" class="form-control"  multiple="multiple" style="display: none;">
+                <select name="categories" class="form-control"  multiple="multiple" style="display: none;">
                     {%  for value, text in form.fields.categories.choices %}
                         <option value="{{values}}">{{text}}</option>
                     {% endfor %}
@@ -46,9 +68,9 @@
                 });
                 </script>
             </div>
-            <div class="acts col-mid-3">
+            <div class="acts col-md-4">
                 <div style="text-align: center;"><p class="title">Acts:</p></div><br>
-                <select name="acts" id="example2" class="form-control"  multiple="multiple" style="display: none;">
+                <select name="acts" class="form-control"  multiple="multiple" style="display: none;">
                     {%  for value, text in form.fields.acts.choices %}
                         <option value="{{value}}">{{text}}</option>
                     {% endfor %}
@@ -59,13 +81,14 @@
                 });
                 </script>
             </div>
-            <div class="judge col-mid-3">
+            <div class="judge col-md-4">
                 <div style="text-align: center;"><p class="title">Judge:</p></div><br>
-                <select name="judges" id="example3" class="form-control"  multiple="multiple" style="display: none;">
+                <select name="judges" class="form-control"  multiple="multiple" style="display: none;">
+                    <option value="check">check</option>
                     {%  for value, text in form.fields.judges.choices %}
                         <option value="{{value}}">{{text}}</option>
                     {% endfor %}
-            </select>
+                </select>
 
                 <script>
                 $(function(){
@@ -74,39 +97,49 @@
                 </script>
             </div>
         </div>
-
-        <div class="drops rows">
-            <div class="dateFrom col-mid-4">
+<!--         <div class="drops rows">
+            <div class="dateFrom col-md-6">
                 <div style="text-align: center;"><p class="title">From:</p></div><br>
                 <input type="date" name="dateFrom"><br><br><br>
             </div>
-            <div class="dateTo col-mid-4">
+            <div class="dateTo col-md-6">
                 <div style="text-align: center;"><p class="title">To:</p></div><br>
                 <input type="date" name="dateTo">
             </div>
-        </div>
-
-
-
-
-         <script src="{%  static 'js/jq.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-
-
-   <script src="{%  static 'js/js.js' %}"></script>
-
-    <script src="{%  static 'js/bootstrap.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="{%  static 'js/BsMultiSelect.js' %}"></script>
-<script>$("select").bsMultiSelect();</script>
-    </form>
+        </div> -->
     </div>
+
+</div>
+
+
     
+                 <script src="{%  static 'js/jq.js' %}"></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+
+           <script src="{%  static 'js/js.js' %}"></script>
+
+            <script src="{%  static 'js/bootstrap.js' %}"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="{%  static 'js/BsMultiSelect.js' %}"></script>
+        <script>$("select").bsMultiSelect();</script>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+    $('#filterButton').on('click', function () {
+        $('#sidebar').toggleClass('active');
+    });
+
+});
+</script>    
+
 </body>
 </html>
 
