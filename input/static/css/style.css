@@ -18,10 +18,11 @@ html, body
     width: auto;
     top: 150px;
     bottom: 0;
+    display: none;
 }
 
 #sidebar.active {
-	display: none;
+	display: block;
 }
 
 #filterButton{
@@ -31,6 +32,7 @@ html, body
 
 .logoBox{
 	position: relative;
+	top: 10vh;
 	height: 30vh;
 }
 
@@ -45,9 +47,10 @@ html, body
 }
 
 .searchForm{
-	position: absolute;
+	position: relative;
 	left: 0;
 	right: 0;
+	top: 10vh;
 }
 
 body{
@@ -59,8 +62,8 @@ body{
 /*#63b3ee*/
 .searchbox{
 	position: relative;
-	width: 55vw;
-	height: 100px;
+	width: 45vw;
+	height: 7vh;
 	margin: 0;
 	left: 50%;
 	transform: translateX(-50%);
@@ -89,7 +92,7 @@ body{
 	right: 5%;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 40px;
+	font-size: 30px;
 	background: transparent;
 	border: 0;
 }
