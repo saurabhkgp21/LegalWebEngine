@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load staticfiles %}
+	<title>Output</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/outstyles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/fa.css' %}">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/BsMultiSelect.css' %}">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+
+</head>
+<body >
+
+<div class="main container" >
+
+
+	<div class="outbox box">
+		<div class="list1  col-md-2" style="font-size: large"><strong><u>List of Cases</u></strong>
+            {%  for i in form.states2 %}
+                <a href="#i.add here"></a>
+            {% endfor %}
+        </div>
+		<div class="judgement1  col-md-2" style="font-size: large"><strong><u>Judgement</u></strong>
+            {% for i in form.states1 %}
+                <h3>{{ i }}</h3>
+            {% endfor %}
+        </div>
+		<div class="judge1  col-md-2" style="font-size: large"><strong><u>Judge</u></strong>
+            {% for i in form.states2 %}
+                <h3>{{ i }}</h3>
+            {% endfor %}
+        </div>
+		<div class="acts1  col-md-2" style="font-size: large"><strong><u>Acts cited</u></strong>
+            {% for i in form.states3 %}
+                <h3>{{ i }}</h3>
+            {% endfor %}
+        </div>
+		<div class="case1  col-md-2" style="font-size: large"><strong><u>Case category</u></strong>
+            {% for i in form %}
+                <h3>#i.add here</h3>
+            {% endfor %}
+        </div>
+		<div class="date1  col-md-2" style="font-size: large"><strong><u>Date</u></strong>
+            {% for i in form %}
+                <h3>#i.add here</h3>
+            {% endfor %}
+        </div>
+	</div>
+
+
+
+</div>
+<script src="{% static 'js/jq.js' %}"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+
+   <script src="{% static 'js/js.js' %}"></script>
+
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="{% static 'js/BsMultiSelect.js' %}"></script>
+<script>$("select").bsMultiSelect();</script>
+
+
+</body>
+</html>

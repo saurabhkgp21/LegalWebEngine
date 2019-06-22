@@ -8,6 +8,12 @@ html, body
     touch-action:none;
 }
 
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #fff;
+	position: relative;
+}
 
 #sidebar {
     /*min-width: : : 250px;*/
@@ -53,12 +59,7 @@ html, body
 	top: 10vh;
 }
 
-body{
-	margin: 0px;
-	padding: 0px;
-	background-color: #fff;
-	position: relative;
-}
+
 /*#63b3ee*/
 .searchbox{
 	position: relative;
